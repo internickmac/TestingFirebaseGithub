@@ -25,5 +25,11 @@ class ViewController: UIViewController {
     @IBAction func btnAction(_ sender: Any) {
         print("Hola")
     }
+    
+    
+    @IBAction func btnAction2(_ sender: Any) {
+        print("hola 2")
+    }
+    
 }
 

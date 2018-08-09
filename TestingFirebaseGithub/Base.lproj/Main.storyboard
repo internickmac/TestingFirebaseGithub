@@ -18,14 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-Lj-nC2">
-                                <rect key="frame" x="139" y="274" width="96" height="96"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UQV-wj-adJ">
+                                <rect key="frame" x="139" y="237" width="96" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="powerButton"/>
-                                <connections>
-                                    <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uF6-NC-MJ8"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdM-Lj-nC2">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                        <state key="normal" image="powerButton"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uF6-NC-MJ8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALe-ga-XQm">
+                                        <rect key="frame" x="0.0" y="96" width="96" height="96"/>
+                                        <state key="normal" image="powerButton"/>
+                                        <connections>
+                                            <action selector="btnAction2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Can-hx-7gx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.24705882352941178" green="0.42352941176470588" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -33,6 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="172" y="33"/>
         </scene>
     </scenes>
     <resources>
